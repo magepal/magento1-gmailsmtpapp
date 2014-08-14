@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!--
+/**
+
+ */
+-->
+<config>
+    <sections>
+        <system>
+            <groups>
+                <magepal_gmailsmtpapp>
+                    <label>Gmail/Google Apps SMPT Pro</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>15</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment></comment>
+                    <fields>
+                        <auth translate="label">
+                            <label>Authentication method</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_email_smtpauth</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Use "login" for Gmail.</comment>
+                        </auth>
+                        <ssl translate="label">
+                            <label>SSL type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>MagePal_GmailSmtpApp_Model_System_Config_Source_AuthenticationType</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ssl>
+                        <smtphost translate="label">
+                            <label>SMTP host</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Use "smtp.gmail.com" for Gmail or Google Apps.</comment>
+                        </smtphost>
+                        <username translate="label">
+                            <label>Username</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </username>
+                        <password translate="label">
+                            <label>Password</label>
+                            <frontend_type>obscure</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </password>
+                        <set_return_path translate="label comment">
+                            <label>Set Return-Path</label>
+                            <comment>
+                                    <![CDATA[]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </set_return_path>
+                        <set_reply_to translate="label comment">
+                            <label>Set Reply-to</label>
+                            <comment>
+                                <![CDATA[]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </set_reply_to>
+                    </fields>
+                </magepal_gmailsmtpapp>
+            </groups>
+        </system>
+    </sections>
+</config>

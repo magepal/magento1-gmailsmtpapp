@@ -1,0 +1,28 @@
+{
+    "name": "magepal/gmailsmtpapp",
+    "type": "magento-module",
+    "license": "OSL-3.0",
+    "homepage": "https://github.com/magepal/gmailsmtpapp",
+    "description": "Send email in magento using your GMail or Google Apps account",
+    "authors": [
+        {
+            "name": "R.S",
+            "email": "rs@magepal.com"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra": {
+        "map": [
+            [
+                "/app/code/local/MagePal/GmailSmtpApp/",
+                "/app/code/local/MagePal/GmailSmtpApp/"
+            ],
+            [
+                "/app/etc/modules/MagePal_GmailSmtpApp.xml",
+                "/app/etc/modules/MagePal_GmailSmtpApp.xml"
+            ]
+        ]
+    }
+}

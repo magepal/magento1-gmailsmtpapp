@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MagePal_GmailSmtpApp>
+            <version>0.1.0</version>
+        </MagePal_GmailSmtpApp>
+    </modules>
+    <global>
+        <models>
+            <core>
+                <rewrite>
+                    <email_template>MagePal_GmailSmtpApp_Model_Core_Email_Template</email_template>
+                </rewrite>
+            </core>
+        </models>
+    </global>
+    <default>
+        <system>
+            <magepal_gmailsmtpapp>
+                <auth>LOGIN</auth>
+                <ssl>tls</ssl>
+                <smtphost>smtp.gmail.com</smtphost>
+                <set_reply_to>1</set_reply_to>
+                <set_return_path>1</set_return_path>
+            </magepal_gmailsmtpapp>
+        </system>
+    </default>
+</config>
